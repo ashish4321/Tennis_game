@@ -143,11 +143,12 @@ function drawEverything() {
 	}
 
 	drawNet();
-
+	//changed by Naveen Gupta to to give space between left paddle and screen of 5px
 	// left player paddle
-	colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	colorRect(5,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	//changed by Naveen Gupta to to give space between right paddle and screen of 5px
 	// right player paddle
-	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
+	colorRect(canvas.width-PADDLE_THICKNESS-5,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
 	// draw the ball
 	colorCircle(ballX, ballY,10,'green');
 
