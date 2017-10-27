@@ -152,9 +152,10 @@ function drawEverything() {
 	colorRect(canvas.width-PADDLE_THICKNESS-PADDLE_OFFSET,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'white');
 	// draw the ball
 	colorCircle(ballX, ballY,10,'green');
-
-	canvasContext.fillText(player1Score, 100,100);
-	canvasContext.fillText(player2Score, canvas.width -100,100);
+    canvasContext.fillStyle='white';
+	canvasContext.font="20px sans-serif"
+	canvasContext.fillText('player: '+player1Score, 100,100);
+	canvasContext.fillText('computer: '+player2Score, canvas.width -300,100);
 }
 function colorCircle(centerX, centerY, radius, drawColor) {
 	canvasContext.fillStyle = 'green';
